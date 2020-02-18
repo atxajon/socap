@@ -1,0 +1,19 @@
+
+----------- SCAN REPORT -----------
+TimeStamp: Mon, 9 Apr 2018 16:22:33 +0000
+(/usr/sbin/cxs --nobayes --clamdsock /var/run/clamav/clamd.sock --deep --defapache nobody --doptions Mv --exploitscan --nofallback --filemax 100000 --noforce --html --ignore /etc/cxs/cxs.ignore --MD5 --options mMOLfSGcChexdnwWZDR --qoptions Mhv --report /root/traslados/2045/cxs_revisar.log --sizemax 500000 --ssl --summary --nosversionscan --timemax 60 --nounofficial --virusscan --voptions mfhex --xtra /etc/cxs/cxs.xtra /root/traslados/2045)
+
+
+Scanning /root/traslados/2045:
+
+----------- SCAN SUMMARY -----------
+Scanned directories: 778
+Scanned files: 7225
+Ignored items: 39
+Suspicious matches: 0
+Viruses found: 0
+Fingerprint matches: 0
+Data scanned: 164.45 MB
+Scan time/item: 0.011 sec
+Scan time: 88.736 sec
+

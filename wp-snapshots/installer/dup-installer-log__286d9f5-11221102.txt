@@ -1,0 +1,863 @@
+********************************************************************************
+* DUPLICATOR-PRO: Install-Log
+* STEP-1 START @ 10:21:06
+* VERSION: 1.3.26
+* NOTICE: Do NOT post to public sites or forums!!
+********************************************************************************
+PACKAGE INFO________ CURRENT SERVER                         |ORIGINAL SERVER
+PHP VERSION_________: 5.6.40                                |7.2.14
+OS__________________: Linux                                 |Darwin
+CREATED_____________: 2020-02-11 22:11:02
+WP VERSION__________: 4.9.11
+DUP VERSION_________: 1.3.26
+DB__________________: 10.1.43
+DB TABLES___________: 42
+DB ROWS_____________: 8,747
+DB FILE SIZE________: 4.34MB
+********************************************************************************
+SERVER INFO
+PHP_________________: 7.2.14 | SAPI: apache2handler
+PHP MEMORY__________: 4294967296 | SUHOSIN: disabled
+SERVER______________: Apache/2.2.34 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.2.14 mod_ssl/2.2.34 OpenSSL/1.0.2o DAV/2 mod_fastcgi/mod_fastcgi-SNAP-0910052141 mod_perl/2.0.9 Perl/v5.24.0
+DOC ROOT____________: "/Applications/MAMP/htdocs/socap"
+DOC ROOT 755________: true
+LOG FILE 644________: true
+REQUEST URL_________: "http://localhost/socap/dup-installer/main.installer.php"
+********************************************************************************
+USER INPUTS
+ARCHIVE ENGINE______: "shellexec_unzip"
+SET DIR PERMS_______: 1
+DIR PERMS VALUE_____: 1363
+SET FILE PERMS______: 1
+FILE PERMS VALUE____: 1204
+SAFE MODE___________: "0"
+LOGGING_____________: "1"
+CONFIG MODE_________: "NEW"
+FILE TIME___________: "current"
+********************************************************************************
+
+
+--------------------------------------
+ARCHIVE SETUP
+--------------------------------------
+NAME________________: "20200211_socap_286d9f537f0b019b2802_20200211221102_archive.zip"
+SIZE________________: 84.01MB
+
+PRE-EXTRACT-CHECKS
+- PASS: Apache '.htaccess' not found - no backup needed.
+- PASS: Microsoft IIS 'web.config' not found - no backup needed.
+- PASS: WordFence '.user.ini' not found - no backup needed.
+
+
+START ZIP FILE EXTRACTION SHELLEXEC >>> 
+>>> Starting Shell-Exec Unzip:
+Command: unzip -o -qq '/Applications/MAMP/htdocs/socap/20200211_socap_286d9f537f0b019b2802_20200211221102_archive.zip' -d '/Applications/MAMP/htdocs/socap' 2>&1
+<<< Shell-Exec Unzip Complete.
+--------------------------------------
+POST-EXTACT-CHECKS
+--------------------------------------
+PERMISSION UPDATES:
+    -DIRS:  '755'
+    -FILES: '644'
+
+STEP-1 COMPLETE @ 10:21:25 - RUNTIME: 19.7522 sec.
+
+
+
+********************************************************************************
+* DUPLICATOR-LITE INSTALL-LOG
+* STEP-2 START @ 10:24:36
+* NOTICE: Do NOT post to public sites or forums!!
+********************************************************************************
+USER INPUTS
+VIEW MODE___________: "basic"
+DB ACTION___________: "empty"
+DB HOST_____________: "**OBSCURED**"
+DB NAME_____________: "**OBSCURED**"
+DB PASS_____________: "**OBSCURED**"
+DB PORT_____________: "**OBSCURED**"
+NON-BREAKING SPACES_: false
+MYSQL MODE__________: "DEFAULT"
+MYSQL MODE OPTS_____: ""
+CHARSET_____________: "utf8"
+COLLATE_____________: "utf8_general_ci"
+COLLATE FB__________: false
+VIEW CREATION_______: true
+STORED PROCEDURE____: true
+********************************************************************************
+
+--------------------------------------
+DATABASE-ENVIRONMENT
+--------------------------------------
+MYSQL VERSION:	This Server: 5.7.25 -- Build Server: 10.1.43
+FILE SIZE:	dup-database__286d9f5-11221102.sql (4.44MB)
+TIMEOUT:	5000
+MAXPACK:	4194304
+SQLMODE:	ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
+NEW SQL FILE:	[/Applications/MAMP/htdocs/socap/dup-installer/dup-installer-data__286d9f5-11221102.sql]
+COLLATE FB:	Off
+
+NOTICE: This servers version [5.7.25] is less than the build version [10.1.43].  
+If you find issues after testing your site please referr to this FAQ item.
+https://snapcreek.com/duplicator/docs/faqs-tech/#faq-installer-260-q
+[PHP ERR][WARN] MSG:count(): Parameter must be an array or an object that implements Countable [CODE:2|FILE:/Applications/MAMP/htdocs/socap/dup-installer/ctrls/ctrl.s2.dbinstall.php|LINE:386]
+--------------------------------------
+DATABASE RESULTS
+--------------------------------------
+DB VIEWS:	enabled
+DB PROCEDURES:	enabled
+ERRORS FOUND:	0
+DROPPED TABLES:	0
+RENAMED TABLES:	0
+QUERIES RAN:	8792
+
+wp_commentmeta: (2)
+wp_comments: (2)
+wp_duplicator_packages: (0)
+wp_icl_content_status: (0)
+wp_icl_core_status: (0)
+wp_icl_flags: (64)
+wp_icl_languages: (64)
+wp_icl_languages_translations: (4096)
+wp_icl_locale_map: (4)
+wp_icl_message_status: (0)
+wp_icl_node: (0)
+wp_icl_reminders: (0)
+wp_icl_string_positions: (0)
+wp_icl_string_status: (0)
+wp_icl_string_translations: (0)
+wp_icl_strings: (0)
+wp_icl_translate: (77)
+wp_icl_translate_job: (26)
+wp_icl_translation_batches: (0)
+wp_icl_translation_status: (26)
+wp_icl_translations: (115)
+wp_layerslider: (9)
+wp_layerslider_revisions: (0)
+wp_links: (0)
+wp_options: (272)
+wp_postmeta: (3118)
+wp_posts: (582)
+wp_revslider_css: (109)
+wp_revslider_layer_animations: (0)
+wp_revslider_navigations: (0)
+wp_revslider_settings: (1)
+wp_revslider_sliders: (0)
+wp_revslider_slides: (0)
+wp_revslider_static_slides: (0)
+wp_term_relationships: (45)
+wp_term_taxonomy: (11)
+wp_termmeta: (0)
+wp_terms: (11)
+wp_usermeta: (42)
+wp_users: (1)
+wp_yoast_seo_links: (0)
+wp_yoast_seo_meta: (12)
+Removed '58' cache/transient rows
+
+INSERT DATA RUNTIME: 4.2147 sec.
+STEP-2 COMPLETE @ 10:24:40 - RUNTIME: 4.2453 sec.
+
+====================================
+SET SEARCH AND REPLACE LIST
+====================================
+
+
+********************************************************************************
+DUPLICATOR PRO INSTALL-LOG
+STEP-3 START @ 10:25:02
+NOTICE: Do NOT post to public sites or forums
+********************************************************************************
+CHARSET SERVER:	"utf8"
+CHARSET CLIENT:	"utf8"
+********************************************************************************
+OPTIONS:
+blogname______________: "SOCAP"
+postguid______________: false
+fullsearch____________: false
+path_old______________: "/home/detenaes/public_html/socap.es"
+path_new______________: "/Applications/MAMP/htdocs/socap"
+siteurl_______________: "http://socap.local"
+url_old_______________: "http://www.socap.es"
+url_new_______________: "http://socap.local"
+maxSerializeStrlen____: 4000000
+replaceMail___________: false
+dbhost________________: "localhost"
+dbuser________________: "root"
+dbname________________: "socap"
+dbcharset_____________: "utf8"
+dbcollate_____________: "utf8_general_ci"
+wp_username___________: ""
+wp_mail_______________: ""
+wp_nickname___________: ""
+wp_first_name_________: ""
+wp_last_name__________: ""
+ssl_admin_____________: false
+cache_wp______________: true
+cache_path____________: false
+exe_safe_mode_________: false
+config_mode___________: "NEW"
+********************************************************************************
+
+
+====================================
+RUN SEARCH AND REPLACE
+====================================
+
+EVALUATE TABLE: "wp_commentmeta"__________________________________[ROWS:     2][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/detenaes/public_html/socap.es" =============> "/Applications/MAMP/htdocs/socap"
+	SEARCH  2:"\/home\/detenaes\/public_html\/socap.es" =========> "\/Applications\/MAMP\/htdocs\/socap"
+	SEARCH  3:"%2Fhome%2Fdetenaes%2Fpublic_html%2Fsocap.es" =====> "%2FApplications%2FMAMP%2Fhtdocs%2Fsocap"
+	SEARCH  4:"\home\detenaes\public_html\socap.es" =============> "/Applications/MAMP/htdocs/socap"
+	SEARCH  5:"\\home\\detenaes\\public_html\\socap.es" =========> "\/Applications\/MAMP\/htdocs\/socap"
+	SEARCH  6:"%5Chome%5Cdetenaes%5Cpublic_html%5Csocap.es" =====> "%2FApplications%2FMAMP%2Fhtdocs%2Fsocap"
+	SEARCH  7:"//www.socap.es" ==================================> "//socap.local"
+	SEARCH  8:"\/\/www.socap.es" ================================> "\/\/socap.local"
+	SEARCH  9:"%2F%2Fwww.socap.es" ==============================> "%2F%2Fsocap.local"
+	SEARCH 10:"//socap.es" ======================================> "//socap.local"
+	SEARCH 11:"\/\/socap.es" ====================================> "\/\/socap.local"
+	SEARCH 12:"%2F%2Fsocap.es" ==================================> "%2F%2Fsocap.local"
+	SEARCH 13:"https://socap.local" =============================> "http://socap.local"
+	SEARCH 14:"https:\/\/socap.local" ===========================> "http:\/\/socap.local"
+	SEARCH 15:"https%3A%2F%2Fsocap.local" =======================> "http%3A%2F%2Fsocap.local"
+	SEARCH 16:"//detenaes-cp511.wordpresstemporal.com/socap.es" => "//socap.local"
+	SEARCH 17:"\/\/detenaes-cp511.wordpresstemporal.com\/socap.es" => "\/\/socap.local"
+	SEARCH 18:"%2F%2Fdetenaes-cp511.wordpresstemporal.com%2Fsocap.es" => "%2F%2Fsocap.local"
+	SEARCH 19:"https://socap.local" =============================> "http://socap.local"
+	SEARCH 20:"https:\/\/socap.local" ===========================> "http:\/\/socap.local"
+	SEARCH 21:"https%3A%2F%2Fsocap.local" =======================> "http%3A%2F%2Fsocap.local"
+
+EVALUATE TABLE: "wp_comments"_____________________________________[ROWS:     2][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/detenaes/public_html/socap.es" =============> "/Applications/MAMP/htdocs/socap"
+	SEARCH  2:"\/home\/detenaes\/public_html\/socap.es" =========> "\/Applications\/MAMP\/htdocs\/socap"
+	SEARCH  3:"%2Fhome%2Fdetenaes%2Fpublic_html%2Fsocap.es" =====> "%2FApplications%2FMAMP%2Fhtdocs%2Fsocap"
+	SEARCH  4:"\home\detenaes\public_html\socap.es" =============> "/Applications/MAMP/htdocs/socap"
+	SEARCH  5:"\\home\\detenaes\\public_html\\socap.es" =========> "\/Applications\/MAMP\/htdocs\/socap"
+	SEARCH  6:"%5Chome%5Cdetenaes%5Cpublic_html%5Csocap.es" =====> "%2FApplications%2FMAMP%2Fhtdocs%2Fsocap"
+	SEARCH  7:"//www.socap.es" ==================================> "//socap.local"
+	SEARCH  8:"\/\/www.socap.es" ================================> "\/\/socap.local"
+	SEARCH  9:"%2F%2Fwww.socap.es" ==============================> "%2F%2Fsocap.local"
+	SEARCH 10:"//socap.es" ======================================> "//socap.local"
+	SEARCH 11:"\/\/socap.es" ====================================> "\/\/socap.local"
+	SEARCH 12:"%2F%2Fsocap.es" ==================================> "%2F%2Fsocap.local"
+	SEARCH 13:"https://socap.local" =============================> "http://socap.local"
+	SEARCH 14:"https:\/\/socap.local" ===========================> "http:\/\/socap.local"
+	SEARCH 15:"https%3A%2F%2Fsocap.local" =======================> "http%3A%2F%2Fsocap.local"
+	SEARCH 16:"//detenaes-cp511.wordpresstemporal.com/socap.es" => "//socap.local"
+	SEARCH 17:"\/\/detenaes-cp511.wordpresstemporal.com\/socap.es" => "\/\/socap.local"
+	SEARCH 18:"%2F%2Fdetenaes-cp511.wordpresstemporal.com%2Fsocap.es" => "%2F%2Fsocap.local"
+	SEARCH 19:"https://socap.local" =============================> "http://socap.local"
+	SEARCH 20:"https:\/\/socap.local" ===========================> "http:\/\/socap.local"
+	SEARCH 21:"https%3A%2F%2Fsocap.local" =======================> "http%3A%2F%2Fsocap.local"
+
+EVALUATE TABLE: "wp_duplicator_packages"__________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_icl_content_status"___________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_icl_core_status"______________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_icl_flags"____________________________________[ROWS:    64][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/detenaes/public_html/socap.es" =============> "/Applications/MAMP/htdocs/socap"
+	SEARCH  2:"\/home\/detenaes\/public_html\/socap.es" =========> "\/Applications\/MAMP\/htdocs\/socap"
+	SEARCH  3:"%2Fhome%2Fdetenaes%2Fpublic_html%2Fsocap.es" =====> "%2FApplications%2FMAMP%2Fhtdocs%2Fsocap"
+	SEARCH  4:"\home\detenaes\public_html\socap.es" =============> "/Applications/MAMP/htdocs/socap"
+	SEARCH  5:"\\home\\detenaes\\public_html\\socap.es" =========> "\/Applications\/MAMP\/htdocs\/socap"
+	SEARCH  6:"%5Chome%5Cdetenaes%5Cpublic_html%5Csocap.es" =====> "%2FApplications%2FMAMP%2Fhtdocs%2Fsocap"
+	SEARCH  7:"//www.socap.es" ==================================> "//socap.local"
+	SEARCH  8:"\/\/www.socap.es" ================================> "\/\/socap.local"
+	SEARCH  9:"%2F%2Fwww.socap.es" ==============================> "%2F%2Fsocap.local"
+	SEARCH 10:"//socap.es" ======================================> "//socap.local"
+	SEARCH 11:"\/\/socap.es" ====================================> "\/\/socap.local"
+	SEARCH 12:"%2F%2Fsocap.es" ==================================> "%2F%2Fsocap.local"
+	SEARCH 13:"https://socap.local" =============================> "http://socap.local"
+	SEARCH 14:"https:\/\/socap.local" ===========================> "http:\/\/socap.local"
+	SEARCH 15:"https%3A%2F%2Fsocap.local" =======================> "http%3A%2F%2Fsocap.local"
+	SEARCH 16:"//detenaes-cp511.wordpresstemporal.com/socap.es" => "//socap.local"
+	SEARCH 17:"\/\/detenaes-cp511.wordpresstemporal.com\/socap.es" => "\/\/socap.local"
+	SEARCH 18:"%2F%2Fdetenaes-cp511.wordpresstemporal.com%2Fsocap.es" => "%2F%2Fsocap.local"
+	SEARCH 19:"https://socap.local" =============================> "http://socap.local"
+	SEARCH 20:"https:\/\/socap.local" ===========================> "http:\/\/socap.local"
+	SEARCH 21:"https%3A%2F%2Fsocap.local" =======================> "http%3A%2F%2Fsocap.local"
+
+EVALUATE TABLE: "wp_icl_languages"________________________________[ROWS:    64][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/detenaes/public_html/socap.es" =============> "/Applications/MAMP/htdocs/socap"
+	SEARCH  2:"\/home\/detenaes\/public_html\/socap.es" =========> "\/Applications\/MAMP\/htdocs\/socap"
+	SEARCH  3:"%2Fhome%2Fdetenaes%2Fpublic_html%2Fsocap.es" =====> "%2FApplications%2FMAMP%2Fhtdocs%2Fsocap"
+	SEARCH  4:"\home\detenaes\public_html\socap.es" =============> "/Applications/MAMP/htdocs/socap"
+	SEARCH  5:"\\home\\detenaes\\public_html\\socap.es" =========> "\/Applications\/MAMP\/htdocs\/socap"
+	SEARCH  6:"%5Chome%5Cdetenaes%5Cpublic_html%5Csocap.es" =====> "%2FApplications%2FMAMP%2Fhtdocs%2Fsocap"
+	SEARCH  7:"//www.socap.es" ==================================> "//socap.local"
+	SEARCH  8:"\/\/www.socap.es" ================================> "\/\/socap.local"
+	SEARCH  9:"%2F%2Fwww.socap.es" ==============================> "%2F%2Fsocap.local"
+	SEARCH 10:"//socap.es" ======================================> "//socap.local"
+	SEARCH 11:"\/\/socap.es" ====================================> "\/\/socap.local"
+	SEARCH 12:"%2F%2Fsocap.es" ==================================> "%2F%2Fsocap.local"
+	SEARCH 13:"https://socap.local" =============================> "http://socap.local"
+	SEARCH 14:"https:\/\/socap.local" ===========================> "http:\/\/socap.local"
+	SEARCH 15:"https%3A%2F%2Fsocap.local" =======================> "http%3A%2F%2Fsocap.local"
+	SEARCH 16:"//detenaes-cp511.wordpresstemporal.com/socap.es" => "//socap.local"
+	SEARCH 17:"\/\/detenaes-cp511.wordpresstemporal.com\/socap.es" => "\/\/socap.local"
+	SEARCH 18:"%2F%2Fdetenaes-cp511.wordpresstemporal.com%2Fsocap.es" => "%2F%2Fsocap.local"
+	SEARCH 19:"https://socap.local" =============================> "http://socap.local"
+	SEARCH 20:"https:\/\/socap.local" ===========================> "http:\/\/socap.local"
+	SEARCH 21:"https%3A%2F%2Fsocap.local" =======================> "http%3A%2F%2Fsocap.local"
+
+EVALUATE TABLE: "wp_icl_languages_translations"___________________[ROWS:  4096][PG:   2][SCAN:text columns]
+	SEARCH  1:"/home/detenaes/public_html/socap.es" =============> "/Applications/MAMP/htdocs/socap"
+	SEARCH  2:"\/home\/detenaes\/public_html\/socap.es" =========> "\/Applications\/MAMP\/htdocs\/socap"
+	SEARCH  3:"%2Fhome%2Fdetenaes%2Fpublic_html%2Fsocap.es" =====> "%2FApplications%2FMAMP%2Fhtdocs%2Fsocap"
+	SEARCH  4:"\home\detenaes\public_html\socap.es" =============> "/Applications/MAMP/htdocs/socap"
+	SEARCH  5:"\\home\\detenaes\\public_html\\socap.es" =========> "\/Applications\/MAMP\/htdocs\/socap"
+	SEARCH  6:"%5Chome%5Cdetenaes%5Cpublic_html%5Csocap.es" =====> "%2FApplications%2FMAMP%2Fhtdocs%2Fsocap"
+	SEARCH  7:"//www.socap.es" ==================================> "//socap.local"
+	SEARCH  8:"\/\/www.socap.es" ================================> "\/\/socap.local"
+	SEARCH  9:"%2F%2Fwww.socap.es" ==============================> "%2F%2Fsocap.local"
+	SEARCH 10:"//socap.es" ======================================> "//socap.local"
+	SEARCH 11:"\/\/socap.es" ====================================> "\/\/socap.local"
+	SEARCH 12:"%2F%2Fsocap.es" ==================================> "%2F%2Fsocap.local"
+	SEARCH 13:"https://socap.local" =============================> "http://socap.local"
+	SEARCH 14:"https:\/\/socap.local" ===========================> "http:\/\/socap.local"
+	SEARCH 15:"https%3A%2F%2Fsocap.local" =======================> "http%3A%2F%2Fsocap.local"
+	SEARCH 16:"//detenaes-cp511.wordpresstemporal.com/socap.es" => "//socap.local"
+	SEARCH 17:"\/\/detenaes-cp511.wordpresstemporal.com\/socap.es" => "\/\/socap.local"
+	SEARCH 18:"%2F%2Fdetenaes-cp511.wordpresstemporal.com%2Fsocap.es" => "%2F%2Fsocap.local"
+	SEARCH 19:"https://socap.local" =============================> "http://socap.local"
+	SEARCH 20:"https:\/\/socap.local" ===========================> "http:\/\/socap.local"
+	SEARCH 21:"https%3A%2F%2Fsocap.local" =======================> "http%3A%2F%2Fsocap.local"
+
+EVALUATE TABLE: "wp_icl_locale_map"_______________________________[ROWS:     4][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/detenaes/public_html/socap.es" =============> "/Applications/MAMP/htdocs/socap"
+	SEARCH  2:"\/home\/detenaes\/public_html\/socap.es" =========> "\/Applications\/MAMP\/htdocs\/socap"
+	SEARCH  3:"%2Fhome%2Fdetenaes%2Fpublic_html%2Fsocap.es" =====> "%2FApplications%2FMAMP%2Fhtdocs%2Fsocap"
+	SEARCH  4:"\home\detenaes\public_html\socap.es" =============> "/Applications/MAMP/htdocs/socap"
+	SEARCH  5:"\\home\\detenaes\\public_html\\socap.es" =========> "\/Applications\/MAMP\/htdocs\/socap"
+	SEARCH  6:"%5Chome%5Cdetenaes%5Cpublic_html%5Csocap.es" =====> "%2FApplications%2FMAMP%2Fhtdocs%2Fsocap"
+	SEARCH  7:"//www.socap.es" ==================================> "//socap.local"
+	SEARCH  8:"\/\/www.socap.es" ================================> "\/\/socap.local"
+	SEARCH  9:"%2F%2Fwww.socap.es" ==============================> "%2F%2Fsocap.local"
+	SEARCH 10:"//socap.es" ======================================> "//socap.local"
+	SEARCH 11:"\/\/socap.es" ====================================> "\/\/socap.local"
+	SEARCH 12:"%2F%2Fsocap.es" ==================================> "%2F%2Fsocap.local"
+	SEARCH 13:"https://socap.local" =============================> "http://socap.local"
+	SEARCH 14:"https:\/\/socap.local" ===========================> "http:\/\/socap.local"
+	SEARCH 15:"https%3A%2F%2Fsocap.local" =======================> "http%3A%2F%2Fsocap.local"
+	SEARCH 16:"//detenaes-cp511.wordpresstemporal.com/socap.es" => "//socap.local"
+	SEARCH 17:"\/\/detenaes-cp511.wordpresstemporal.com\/socap.es" => "\/\/socap.local"
+	SEARCH 18:"%2F%2Fdetenaes-cp511.wordpresstemporal.com%2Fsocap.es" => "%2F%2Fsocap.local"
+	SEARCH 19:"https://socap.local" =============================> "http://socap.local"
+	SEARCH 20:"https:\/\/socap.local" ===========================> "http:\/\/socap.local"
+	SEARCH 21:"https%3A%2F%2Fsocap.local" =======================> "http%3A%2F%2Fsocap.local"
+
+EVALUATE TABLE: "wp_icl_message_status"___________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_icl_node"_____________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_icl_reminders"________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_icl_string_positions"_________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_icl_string_status"____________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_icl_string_translations"______________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_icl_strings"__________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_icl_translate"________________________________[ROWS:    77][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/detenaes/public_html/socap.es" =============> "/Applications/MAMP/htdocs/socap"
+	SEARCH  2:"\/home\/detenaes\/public_html\/socap.es" =========> "\/Applications\/MAMP\/htdocs\/socap"
+	SEARCH  3:"%2Fhome%2Fdetenaes%2Fpublic_html%2Fsocap.es" =====> "%2FApplications%2FMAMP%2Fhtdocs%2Fsocap"
+	SEARCH  4:"\home\detenaes\public_html\socap.es" =============> "/Applications/MAMP/htdocs/socap"
+	SEARCH  5:"\\home\\detenaes\\public_html\\socap.es" =========> "\/Applications\/MAMP\/htdocs\/socap"
+	SEARCH  6:"%5Chome%5Cdetenaes%5Cpublic_html%5Csocap.es" =====> "%2FApplications%2FMAMP%2Fhtdocs%2Fsocap"
+	SEARCH  7:"//www.socap.es" ==================================> "//socap.local"
+	SEARCH  8:"\/\/www.socap.es" ================================> "\/\/socap.local"
+	SEARCH  9:"%2F%2Fwww.socap.es" ==============================> "%2F%2Fsocap.local"
+	SEARCH 10:"//socap.es" ======================================> "//socap.local"
+	SEARCH 11:"\/\/socap.es" ====================================> "\/\/socap.local"
+	SEARCH 12:"%2F%2Fsocap.es" ==================================> "%2F%2Fsocap.local"
+	SEARCH 13:"https://socap.local" =============================> "http://socap.local"
+	SEARCH 14:"https:\/\/socap.local" ===========================> "http:\/\/socap.local"
+	SEARCH 15:"https%3A%2F%2Fsocap.local" =======================> "http%3A%2F%2Fsocap.local"
+	SEARCH 16:"//detenaes-cp511.wordpresstemporal.com/socap.es" => "//socap.local"
+	SEARCH 17:"\/\/detenaes-cp511.wordpresstemporal.com\/socap.es" => "\/\/socap.local"
+	SEARCH 18:"%2F%2Fdetenaes-cp511.wordpresstemporal.com%2Fsocap.es" => "%2F%2Fsocap.local"
+	SEARCH 19:"https://socap.local" =============================> "http://socap.local"
+	SEARCH 20:"https:\/\/socap.local" ===========================> "http:\/\/socap.local"
+	SEARCH 21:"https%3A%2F%2Fsocap.local" =======================> "http%3A%2F%2Fsocap.local"
+
+EVALUATE TABLE: "wp_icl_translate_job"____________________________[ROWS:    26][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/detenaes/public_html/socap.es" =============> "/Applications/MAMP/htdocs/socap"
+	SEARCH  2:"\/home\/detenaes\/public_html\/socap.es" =========> "\/Applications\/MAMP\/htdocs\/socap"
+	SEARCH  3:"%2Fhome%2Fdetenaes%2Fpublic_html%2Fsocap.es" =====> "%2FApplications%2FMAMP%2Fhtdocs%2Fsocap"
+	SEARCH  4:"\home\detenaes\public_html\socap.es" =============> "/Applications/MAMP/htdocs/socap"
+	SEARCH  5:"\\home\\detenaes\\public_html\\socap.es" =========> "\/Applications\/MAMP\/htdocs\/socap"
+	SEARCH  6:"%5Chome%5Cdetenaes%5Cpublic_html%5Csocap.es" =====> "%2FApplications%2FMAMP%2Fhtdocs%2Fsocap"
+	SEARCH  7:"//www.socap.es" ==================================> "//socap.local"
+	SEARCH  8:"\/\/www.socap.es" ================================> "\/\/socap.local"
+	SEARCH  9:"%2F%2Fwww.socap.es" ==============================> "%2F%2Fsocap.local"
+	SEARCH 10:"//socap.es" ======================================> "//socap.local"
+	SEARCH 11:"\/\/socap.es" ====================================> "\/\/socap.local"
+	SEARCH 12:"%2F%2Fsocap.es" ==================================> "%2F%2Fsocap.local"
+	SEARCH 13:"https://socap.local" =============================> "http://socap.local"
+	SEARCH 14:"https:\/\/socap.local" ===========================> "http:\/\/socap.local"
+	SEARCH 15:"https%3A%2F%2Fsocap.local" =======================> "http%3A%2F%2Fsocap.local"
+	SEARCH 16:"//detenaes-cp511.wordpresstemporal.com/socap.es" => "//socap.local"
+	SEARCH 17:"\/\/detenaes-cp511.wordpresstemporal.com\/socap.es" => "\/\/socap.local"
+	SEARCH 18:"%2F%2Fdetenaes-cp511.wordpresstemporal.com%2Fsocap.es" => "%2F%2Fsocap.local"
+	SEARCH 19:"https://socap.local" =============================> "http://socap.local"
+	SEARCH 20:"https:\/\/socap.local" ===========================> "http:\/\/socap.local"
+	SEARCH 21:"https%3A%2F%2Fsocap.local" =======================> "http%3A%2F%2Fsocap.local"
+
+EVALUATE TABLE: "wp_icl_translation_batches"______________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_icl_translation_status"_______________________[ROWS:    26][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/detenaes/public_html/socap.es" =============> "/Applications/MAMP/htdocs/socap"
+	SEARCH  2:"\/home\/detenaes\/public_html\/socap.es" =========> "\/Applications\/MAMP\/htdocs\/socap"
+	SEARCH  3:"%2Fhome%2Fdetenaes%2Fpublic_html%2Fsocap.es" =====> "%2FApplications%2FMAMP%2Fhtdocs%2Fsocap"
+	SEARCH  4:"\home\detenaes\public_html\socap.es" =============> "/Applications/MAMP/htdocs/socap"
+	SEARCH  5:"\\home\\detenaes\\public_html\\socap.es" =========> "\/Applications\/MAMP\/htdocs\/socap"
+	SEARCH  6:"%5Chome%5Cdetenaes%5Cpublic_html%5Csocap.es" =====> "%2FApplications%2FMAMP%2Fhtdocs%2Fsocap"
+	SEARCH  7:"//www.socap.es" ==================================> "//socap.local"
+	SEARCH  8:"\/\/www.socap.es" ================================> "\/\/socap.local"
+	SEARCH  9:"%2F%2Fwww.socap.es" ==============================> "%2F%2Fsocap.local"
+	SEARCH 10:"//socap.es" ======================================> "//socap.local"
+	SEARCH 11:"\/\/socap.es" ====================================> "\/\/socap.local"
+	SEARCH 12:"%2F%2Fsocap.es" ==================================> "%2F%2Fsocap.local"
+	SEARCH 13:"https://socap.local" =============================> "http://socap.local"
+	SEARCH 14:"https:\/\/socap.local" ===========================> "http:\/\/socap.local"
+	SEARCH 15:"https%3A%2F%2Fsocap.local" =======================> "http%3A%2F%2Fsocap.local"
+	SEARCH 16:"//detenaes-cp511.wordpresstemporal.com/socap.es" => "//socap.local"
+	SEARCH 17:"\/\/detenaes-cp511.wordpresstemporal.com\/socap.es" => "\/\/socap.local"
+	SEARCH 18:"%2F%2Fdetenaes-cp511.wordpresstemporal.com%2Fsocap.es" => "%2F%2Fsocap.local"
+	SEARCH 19:"https://socap.local" =============================> "http://socap.local"
+	SEARCH 20:"https:\/\/socap.local" ===========================> "http:\/\/socap.local"
+	SEARCH 21:"https%3A%2F%2Fsocap.local" =======================> "http%3A%2F%2Fsocap.local"
+
+EVALUATE TABLE: "wp_icl_translations"_____________________________[ROWS:   115][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/detenaes/public_html/socap.es" =============> "/Applications/MAMP/htdocs/socap"
+	SEARCH  2:"\/home\/detenaes\/public_html\/socap.es" =========> "\/Applications\/MAMP\/htdocs\/socap"
+	SEARCH  3:"%2Fhome%2Fdetenaes%2Fpublic_html%2Fsocap.es" =====> "%2FApplications%2FMAMP%2Fhtdocs%2Fsocap"
+	SEARCH  4:"\home\detenaes\public_html\socap.es" =============> "/Applications/MAMP/htdocs/socap"
+	SEARCH  5:"\\home\\detenaes\\public_html\\socap.es" =========> "\/Applications\/MAMP\/htdocs\/socap"
+	SEARCH  6:"%5Chome%5Cdetenaes%5Cpublic_html%5Csocap.es" =====> "%2FApplications%2FMAMP%2Fhtdocs%2Fsocap"
+	SEARCH  7:"//www.socap.es" ==================================> "//socap.local"
+	SEARCH  8:"\/\/www.socap.es" ================================> "\/\/socap.local"
+	SEARCH  9:"%2F%2Fwww.socap.es" ==============================> "%2F%2Fsocap.local"
+	SEARCH 10:"//socap.es" ======================================> "//socap.local"
+	SEARCH 11:"\/\/socap.es" ====================================> "\/\/socap.local"
+	SEARCH 12:"%2F%2Fsocap.es" ==================================> "%2F%2Fsocap.local"
+	SEARCH 13:"https://socap.local" =============================> "http://socap.local"
+	SEARCH 14:"https:\/\/socap.local" ===========================> "http:\/\/socap.local"
+	SEARCH 15:"https%3A%2F%2Fsocap.local" =======================> "http%3A%2F%2Fsocap.local"
+	SEARCH 16:"//detenaes-cp511.wordpresstemporal.com/socap.es" => "//socap.local"
+	SEARCH 17:"\/\/detenaes-cp511.wordpresstemporal.com\/socap.es" => "\/\/socap.local"
+	SEARCH 18:"%2F%2Fdetenaes-cp511.wordpresstemporal.com%2Fsocap.es" => "%2F%2Fsocap.local"
+	SEARCH 19:"https://socap.local" =============================> "http://socap.local"
+	SEARCH 20:"https:\/\/socap.local" ===========================> "http:\/\/socap.local"
+	SEARCH 21:"https%3A%2F%2Fsocap.local" =======================> "http%3A%2F%2Fsocap.local"
+
+EVALUATE TABLE: "wp_layerslider"__________________________________[ROWS:     9][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/detenaes/public_html/socap.es" =============> "/Applications/MAMP/htdocs/socap"
+	SEARCH  2:"\/home\/detenaes\/public_html\/socap.es" =========> "\/Applications\/MAMP\/htdocs\/socap"
+	SEARCH  3:"%2Fhome%2Fdetenaes%2Fpublic_html%2Fsocap.es" =====> "%2FApplications%2FMAMP%2Fhtdocs%2Fsocap"
+	SEARCH  4:"\home\detenaes\public_html\socap.es" =============> "/Applications/MAMP/htdocs/socap"
+	SEARCH  5:"\\home\\detenaes\\public_html\\socap.es" =========> "\/Applications\/MAMP\/htdocs\/socap"
+	SEARCH  6:"%5Chome%5Cdetenaes%5Cpublic_html%5Csocap.es" =====> "%2FApplications%2FMAMP%2Fhtdocs%2Fsocap"
+	SEARCH  7:"//www.socap.es" ==================================> "//socap.local"
+	SEARCH  8:"\/\/www.socap.es" ================================> "\/\/socap.local"
+	SEARCH  9:"%2F%2Fwww.socap.es" ==============================> "%2F%2Fsocap.local"
+	SEARCH 10:"//socap.es" ======================================> "//socap.local"
+	SEARCH 11:"\/\/socap.es" ====================================> "\/\/socap.local"
+	SEARCH 12:"%2F%2Fsocap.es" ==================================> "%2F%2Fsocap.local"
+	SEARCH 13:"https://socap.local" =============================> "http://socap.local"
+	SEARCH 14:"https:\/\/socap.local" ===========================> "http:\/\/socap.local"
+	SEARCH 15:"https%3A%2F%2Fsocap.local" =======================> "http%3A%2F%2Fsocap.local"
+	SEARCH 16:"//detenaes-cp511.wordpresstemporal.com/socap.es" => "//socap.local"
+	SEARCH 17:"\/\/detenaes-cp511.wordpresstemporal.com\/socap.es" => "\/\/socap.local"
+	SEARCH 18:"%2F%2Fdetenaes-cp511.wordpresstemporal.com%2Fsocap.es" => "%2F%2Fsocap.local"
+	SEARCH 19:"https://socap.local" =============================> "http://socap.local"
+	SEARCH 20:"https:\/\/socap.local" ===========================> "http:\/\/socap.local"
+	SEARCH 21:"https%3A%2F%2Fsocap.local" =======================> "http%3A%2F%2Fsocap.local"
+
+EVALUATE TABLE: "wp_layerslider_revisions"________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_links"________________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_options"______________________________________[ROWS:   272][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/detenaes/public_html/socap.es" =============> "/Applications/MAMP/htdocs/socap"
+	SEARCH  2:"\/home\/detenaes\/public_html\/socap.es" =========> "\/Applications\/MAMP\/htdocs\/socap"
+	SEARCH  3:"%2Fhome%2Fdetenaes%2Fpublic_html%2Fsocap.es" =====> "%2FApplications%2FMAMP%2Fhtdocs%2Fsocap"
+	SEARCH  4:"\home\detenaes\public_html\socap.es" =============> "/Applications/MAMP/htdocs/socap"
+	SEARCH  5:"\\home\\detenaes\\public_html\\socap.es" =========> "\/Applications\/MAMP\/htdocs\/socap"
+	SEARCH  6:"%5Chome%5Cdetenaes%5Cpublic_html%5Csocap.es" =====> "%2FApplications%2FMAMP%2Fhtdocs%2Fsocap"
+	SEARCH  7:"//www.socap.es" ==================================> "//socap.local"
+	SEARCH  8:"\/\/www.socap.es" ================================> "\/\/socap.local"
+	SEARCH  9:"%2F%2Fwww.socap.es" ==============================> "%2F%2Fsocap.local"
+	SEARCH 10:"//socap.es" ======================================> "//socap.local"
+	SEARCH 11:"\/\/socap.es" ====================================> "\/\/socap.local"
+	SEARCH 12:"%2F%2Fsocap.es" ==================================> "%2F%2Fsocap.local"
+	SEARCH 13:"https://socap.local" =============================> "http://socap.local"
+	SEARCH 14:"https:\/\/socap.local" ===========================> "http:\/\/socap.local"
+	SEARCH 15:"https%3A%2F%2Fsocap.local" =======================> "http%3A%2F%2Fsocap.local"
+	SEARCH 16:"//detenaes-cp511.wordpresstemporal.com/socap.es" => "//socap.local"
+	SEARCH 17:"\/\/detenaes-cp511.wordpresstemporal.com\/socap.es" => "\/\/socap.local"
+	SEARCH 18:"%2F%2Fdetenaes-cp511.wordpresstemporal.com%2Fsocap.es" => "%2F%2Fsocap.local"
+	SEARCH 19:"https://socap.local" =============================> "http://socap.local"
+	SEARCH 20:"https:\/\/socap.local" ===========================> "http:\/\/socap.local"
+	SEARCH 21:"https%3A%2F%2Fsocap.local" =======================> "http%3A%2F%2Fsocap.local"
+
+EVALUATE TABLE: "wp_postmeta"_____________________________________[ROWS:  3118][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/detenaes/public_html/socap.es" =============> "/Applications/MAMP/htdocs/socap"
+	SEARCH  2:"\/home\/detenaes\/public_html\/socap.es" =========> "\/Applications\/MAMP\/htdocs\/socap"
+	SEARCH  3:"%2Fhome%2Fdetenaes%2Fpublic_html%2Fsocap.es" =====> "%2FApplications%2FMAMP%2Fhtdocs%2Fsocap"
+	SEARCH  4:"\home\detenaes\public_html\socap.es" =============> "/Applications/MAMP/htdocs/socap"
+	SEARCH  5:"\\home\\detenaes\\public_html\\socap.es" =========> "\/Applications\/MAMP\/htdocs\/socap"
+	SEARCH  6:"%5Chome%5Cdetenaes%5Cpublic_html%5Csocap.es" =====> "%2FApplications%2FMAMP%2Fhtdocs%2Fsocap"
+	SEARCH  7:"//www.socap.es" ==================================> "//socap.local"
+	SEARCH  8:"\/\/www.socap.es" ================================> "\/\/socap.local"
+	SEARCH  9:"%2F%2Fwww.socap.es" ==============================> "%2F%2Fsocap.local"
+	SEARCH 10:"//socap.es" ======================================> "//socap.local"
+	SEARCH 11:"\/\/socap.es" ====================================> "\/\/socap.local"
+	SEARCH 12:"%2F%2Fsocap.es" ==================================> "%2F%2Fsocap.local"
+	SEARCH 13:"https://socap.local" =============================> "http://socap.local"
+	SEARCH 14:"https:\/\/socap.local" ===========================> "http:\/\/socap.local"
+	SEARCH 15:"https%3A%2F%2Fsocap.local" =======================> "http%3A%2F%2Fsocap.local"
+	SEARCH 16:"//detenaes-cp511.wordpresstemporal.com/socap.es" => "//socap.local"
+	SEARCH 17:"\/\/detenaes-cp511.wordpresstemporal.com\/socap.es" => "\/\/socap.local"
+	SEARCH 18:"%2F%2Fdetenaes-cp511.wordpresstemporal.com%2Fsocap.es" => "%2F%2Fsocap.local"
+	SEARCH 19:"https://socap.local" =============================> "http://socap.local"
+	SEARCH 20:"https:\/\/socap.local" ===========================> "http:\/\/socap.local"
+	SEARCH 21:"https%3A%2F%2Fsocap.local" =======================> "http%3A%2F%2Fsocap.local"
+
+EVALUATE TABLE: "wp_posts"________________________________________[ROWS:   582][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/detenaes/public_html/socap.es" =============> "/Applications/MAMP/htdocs/socap"
+	SEARCH  2:"\/home\/detenaes\/public_html\/socap.es" =========> "\/Applications\/MAMP\/htdocs\/socap"
+	SEARCH  3:"%2Fhome%2Fdetenaes%2Fpublic_html%2Fsocap.es" =====> "%2FApplications%2FMAMP%2Fhtdocs%2Fsocap"
+	SEARCH  4:"\home\detenaes\public_html\socap.es" =============> "/Applications/MAMP/htdocs/socap"
+	SEARCH  5:"\\home\\detenaes\\public_html\\socap.es" =========> "\/Applications\/MAMP\/htdocs\/socap"
+	SEARCH  6:"%5Chome%5Cdetenaes%5Cpublic_html%5Csocap.es" =====> "%2FApplications%2FMAMP%2Fhtdocs%2Fsocap"
+	SEARCH  7:"//www.socap.es" ==================================> "//socap.local"
+	SEARCH  8:"\/\/www.socap.es" ================================> "\/\/socap.local"
+	SEARCH  9:"%2F%2Fwww.socap.es" ==============================> "%2F%2Fsocap.local"
+	SEARCH 10:"//socap.es" ======================================> "//socap.local"
+	SEARCH 11:"\/\/socap.es" ====================================> "\/\/socap.local"
+	SEARCH 12:"%2F%2Fsocap.es" ==================================> "%2F%2Fsocap.local"
+	SEARCH 13:"https://socap.local" =============================> "http://socap.local"
+	SEARCH 14:"https:\/\/socap.local" ===========================> "http:\/\/socap.local"
+	SEARCH 15:"https%3A%2F%2Fsocap.local" =======================> "http%3A%2F%2Fsocap.local"
+	SEARCH 16:"//detenaes-cp511.wordpresstemporal.com/socap.es" => "//socap.local"
+	SEARCH 17:"\/\/detenaes-cp511.wordpresstemporal.com\/socap.es" => "\/\/socap.local"
+	SEARCH 18:"%2F%2Fdetenaes-cp511.wordpresstemporal.com%2Fsocap.es" => "%2F%2Fsocap.local"
+	SEARCH 19:"https://socap.local" =============================> "http://socap.local"
+	SEARCH 20:"https:\/\/socap.local" ===========================> "http:\/\/socap.local"
+	SEARCH 21:"https%3A%2F%2Fsocap.local" =======================> "http%3A%2F%2Fsocap.local"
+
+EVALUATE TABLE: "wp_revslider_css"________________________________[ROWS:   109][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/detenaes/public_html/socap.es" =============> "/Applications/MAMP/htdocs/socap"
+	SEARCH  2:"\/home\/detenaes\/public_html\/socap.es" =========> "\/Applications\/MAMP\/htdocs\/socap"
+	SEARCH  3:"%2Fhome%2Fdetenaes%2Fpublic_html%2Fsocap.es" =====> "%2FApplications%2FMAMP%2Fhtdocs%2Fsocap"
+	SEARCH  4:"\home\detenaes\public_html\socap.es" =============> "/Applications/MAMP/htdocs/socap"
+	SEARCH  5:"\\home\\detenaes\\public_html\\socap.es" =========> "\/Applications\/MAMP\/htdocs\/socap"
+	SEARCH  6:"%5Chome%5Cdetenaes%5Cpublic_html%5Csocap.es" =====> "%2FApplications%2FMAMP%2Fhtdocs%2Fsocap"
+	SEARCH  7:"//www.socap.es" ==================================> "//socap.local"
+	SEARCH  8:"\/\/www.socap.es" ================================> "\/\/socap.local"
+	SEARCH  9:"%2F%2Fwww.socap.es" ==============================> "%2F%2Fsocap.local"
+	SEARCH 10:"//socap.es" ======================================> "//socap.local"
+	SEARCH 11:"\/\/socap.es" ====================================> "\/\/socap.local"
+	SEARCH 12:"%2F%2Fsocap.es" ==================================> "%2F%2Fsocap.local"
+	SEARCH 13:"https://socap.local" =============================> "http://socap.local"
+	SEARCH 14:"https:\/\/socap.local" ===========================> "http:\/\/socap.local"
+	SEARCH 15:"https%3A%2F%2Fsocap.local" =======================> "http%3A%2F%2Fsocap.local"
+	SEARCH 16:"//detenaes-cp511.wordpresstemporal.com/socap.es" => "//socap.local"
+	SEARCH 17:"\/\/detenaes-cp511.wordpresstemporal.com\/socap.es" => "\/\/socap.local"
+	SEARCH 18:"%2F%2Fdetenaes-cp511.wordpresstemporal.com%2Fsocap.es" => "%2F%2Fsocap.local"
+	SEARCH 19:"https://socap.local" =============================> "http://socap.local"
+	SEARCH 20:"https:\/\/socap.local" ===========================> "http:\/\/socap.local"
+	SEARCH 21:"https%3A%2F%2Fsocap.local" =======================> "http%3A%2F%2Fsocap.local"
+
+EVALUATE TABLE: "wp_revslider_layer_animations"___________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_revslider_navigations"________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_revslider_settings"___________________________[ROWS:     1][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/detenaes/public_html/socap.es" =============> "/Applications/MAMP/htdocs/socap"
+	SEARCH  2:"\/home\/detenaes\/public_html\/socap.es" =========> "\/Applications\/MAMP\/htdocs\/socap"
+	SEARCH  3:"%2Fhome%2Fdetenaes%2Fpublic_html%2Fsocap.es" =====> "%2FApplications%2FMAMP%2Fhtdocs%2Fsocap"
+	SEARCH  4:"\home\detenaes\public_html\socap.es" =============> "/Applications/MAMP/htdocs/socap"
+	SEARCH  5:"\\home\\detenaes\\public_html\\socap.es" =========> "\/Applications\/MAMP\/htdocs\/socap"
+	SEARCH  6:"%5Chome%5Cdetenaes%5Cpublic_html%5Csocap.es" =====> "%2FApplications%2FMAMP%2Fhtdocs%2Fsocap"
+	SEARCH  7:"//www.socap.es" ==================================> "//socap.local"
+	SEARCH  8:"\/\/www.socap.es" ================================> "\/\/socap.local"
+	SEARCH  9:"%2F%2Fwww.socap.es" ==============================> "%2F%2Fsocap.local"
+	SEARCH 10:"//socap.es" ======================================> "//socap.local"
+	SEARCH 11:"\/\/socap.es" ====================================> "\/\/socap.local"
+	SEARCH 12:"%2F%2Fsocap.es" ==================================> "%2F%2Fsocap.local"
+	SEARCH 13:"https://socap.local" =============================> "http://socap.local"
+	SEARCH 14:"https:\/\/socap.local" ===========================> "http:\/\/socap.local"
+	SEARCH 15:"https%3A%2F%2Fsocap.local" =======================> "http%3A%2F%2Fsocap.local"
+	SEARCH 16:"//detenaes-cp511.wordpresstemporal.com/socap.es" => "//socap.local"
+	SEARCH 17:"\/\/detenaes-cp511.wordpresstemporal.com\/socap.es" => "\/\/socap.local"
+	SEARCH 18:"%2F%2Fdetenaes-cp511.wordpresstemporal.com%2Fsocap.es" => "%2F%2Fsocap.local"
+	SEARCH 19:"https://socap.local" =============================> "http://socap.local"
+	SEARCH 20:"https:\/\/socap.local" ===========================> "http:\/\/socap.local"
+	SEARCH 21:"https%3A%2F%2Fsocap.local" =======================> "http%3A%2F%2Fsocap.local"
+
+EVALUATE TABLE: "wp_revslider_sliders"____________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_revslider_slides"_____________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_revslider_static_slides"______________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_term_relationships"___________________________[ROWS:    45][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/detenaes/public_html/socap.es" =============> "/Applications/MAMP/htdocs/socap"
+	SEARCH  2:"\/home\/detenaes\/public_html\/socap.es" =========> "\/Applications\/MAMP\/htdocs\/socap"
+	SEARCH  3:"%2Fhome%2Fdetenaes%2Fpublic_html%2Fsocap.es" =====> "%2FApplications%2FMAMP%2Fhtdocs%2Fsocap"
+	SEARCH  4:"\home\detenaes\public_html\socap.es" =============> "/Applications/MAMP/htdocs/socap"
+	SEARCH  5:"\\home\\detenaes\\public_html\\socap.es" =========> "\/Applications\/MAMP\/htdocs\/socap"
+	SEARCH  6:"%5Chome%5Cdetenaes%5Cpublic_html%5Csocap.es" =====> "%2FApplications%2FMAMP%2Fhtdocs%2Fsocap"
+	SEARCH  7:"//www.socap.es" ==================================> "//socap.local"
+	SEARCH  8:"\/\/www.socap.es" ================================> "\/\/socap.local"
+	SEARCH  9:"%2F%2Fwww.socap.es" ==============================> "%2F%2Fsocap.local"
+	SEARCH 10:"//socap.es" ======================================> "//socap.local"
+	SEARCH 11:"\/\/socap.es" ====================================> "\/\/socap.local"
+	SEARCH 12:"%2F%2Fsocap.es" ==================================> "%2F%2Fsocap.local"
+	SEARCH 13:"https://socap.local" =============================> "http://socap.local"
+	SEARCH 14:"https:\/\/socap.local" ===========================> "http:\/\/socap.local"
+	SEARCH 15:"https%3A%2F%2Fsocap.local" =======================> "http%3A%2F%2Fsocap.local"
+	SEARCH 16:"//detenaes-cp511.wordpresstemporal.com/socap.es" => "//socap.local"
+	SEARCH 17:"\/\/detenaes-cp511.wordpresstemporal.com\/socap.es" => "\/\/socap.local"
+	SEARCH 18:"%2F%2Fdetenaes-cp511.wordpresstemporal.com%2Fsocap.es" => "%2F%2Fsocap.local"
+	SEARCH 19:"https://socap.local" =============================> "http://socap.local"
+	SEARCH 20:"https:\/\/socap.local" ===========================> "http:\/\/socap.local"
+	SEARCH 21:"https%3A%2F%2Fsocap.local" =======================> "http%3A%2F%2Fsocap.local"
+
+EVALUATE TABLE: "wp_term_taxonomy"________________________________[ROWS:    11][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/detenaes/public_html/socap.es" =============> "/Applications/MAMP/htdocs/socap"
+	SEARCH  2:"\/home\/detenaes\/public_html\/socap.es" =========> "\/Applications\/MAMP\/htdocs\/socap"
+	SEARCH  3:"%2Fhome%2Fdetenaes%2Fpublic_html%2Fsocap.es" =====> "%2FApplications%2FMAMP%2Fhtdocs%2Fsocap"
+	SEARCH  4:"\home\detenaes\public_html\socap.es" =============> "/Applications/MAMP/htdocs/socap"
+	SEARCH  5:"\\home\\detenaes\\public_html\\socap.es" =========> "\/Applications\/MAMP\/htdocs\/socap"
+	SEARCH  6:"%5Chome%5Cdetenaes%5Cpublic_html%5Csocap.es" =====> "%2FApplications%2FMAMP%2Fhtdocs%2Fsocap"
+	SEARCH  7:"//www.socap.es" ==================================> "//socap.local"
+	SEARCH  8:"\/\/www.socap.es" ================================> "\/\/socap.local"
+	SEARCH  9:"%2F%2Fwww.socap.es" ==============================> "%2F%2Fsocap.local"
+	SEARCH 10:"//socap.es" ======================================> "//socap.local"
+	SEARCH 11:"\/\/socap.es" ====================================> "\/\/socap.local"
+	SEARCH 12:"%2F%2Fsocap.es" ==================================> "%2F%2Fsocap.local"
+	SEARCH 13:"https://socap.local" =============================> "http://socap.local"
+	SEARCH 14:"https:\/\/socap.local" ===========================> "http:\/\/socap.local"
+	SEARCH 15:"https%3A%2F%2Fsocap.local" =======================> "http%3A%2F%2Fsocap.local"
+	SEARCH 16:"//detenaes-cp511.wordpresstemporal.com/socap.es" => "//socap.local"
+	SEARCH 17:"\/\/detenaes-cp511.wordpresstemporal.com\/socap.es" => "\/\/socap.local"
+	SEARCH 18:"%2F%2Fdetenaes-cp511.wordpresstemporal.com%2Fsocap.es" => "%2F%2Fsocap.local"
+	SEARCH 19:"https://socap.local" =============================> "http://socap.local"
+	SEARCH 20:"https:\/\/socap.local" ===========================> "http:\/\/socap.local"
+	SEARCH 21:"https%3A%2F%2Fsocap.local" =======================> "http%3A%2F%2Fsocap.local"
+
+EVALUATE TABLE: "wp_termmeta"_____________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_terms"________________________________________[ROWS:    11][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/detenaes/public_html/socap.es" =============> "/Applications/MAMP/htdocs/socap"
+	SEARCH  2:"\/home\/detenaes\/public_html\/socap.es" =========> "\/Applications\/MAMP\/htdocs\/socap"
+	SEARCH  3:"%2Fhome%2Fdetenaes%2Fpublic_html%2Fsocap.es" =====> "%2FApplications%2FMAMP%2Fhtdocs%2Fsocap"
+	SEARCH  4:"\home\detenaes\public_html\socap.es" =============> "/Applications/MAMP/htdocs/socap"
+	SEARCH  5:"\\home\\detenaes\\public_html\\socap.es" =========> "\/Applications\/MAMP\/htdocs\/socap"
+	SEARCH  6:"%5Chome%5Cdetenaes%5Cpublic_html%5Csocap.es" =====> "%2FApplications%2FMAMP%2Fhtdocs%2Fsocap"
+	SEARCH  7:"//www.socap.es" ==================================> "//socap.local"
+	SEARCH  8:"\/\/www.socap.es" ================================> "\/\/socap.local"
+	SEARCH  9:"%2F%2Fwww.socap.es" ==============================> "%2F%2Fsocap.local"
+	SEARCH 10:"//socap.es" ======================================> "//socap.local"
+	SEARCH 11:"\/\/socap.es" ====================================> "\/\/socap.local"
+	SEARCH 12:"%2F%2Fsocap.es" ==================================> "%2F%2Fsocap.local"
+	SEARCH 13:"https://socap.local" =============================> "http://socap.local"
+	SEARCH 14:"https:\/\/socap.local" ===========================> "http:\/\/socap.local"
+	SEARCH 15:"https%3A%2F%2Fsocap.local" =======================> "http%3A%2F%2Fsocap.local"
+	SEARCH 16:"//detenaes-cp511.wordpresstemporal.com/socap.es" => "//socap.local"
+	SEARCH 17:"\/\/detenaes-cp511.wordpresstemporal.com\/socap.es" => "\/\/socap.local"
+	SEARCH 18:"%2F%2Fdetenaes-cp511.wordpresstemporal.com%2Fsocap.es" => "%2F%2Fsocap.local"
+	SEARCH 19:"https://socap.local" =============================> "http://socap.local"
+	SEARCH 20:"https:\/\/socap.local" ===========================> "http:\/\/socap.local"
+	SEARCH 21:"https%3A%2F%2Fsocap.local" =======================> "http%3A%2F%2Fsocap.local"
+
+EVALUATE TABLE: "wp_usermeta"_____________________________________[ROWS:    42][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/detenaes/public_html/socap.es" =============> "/Applications/MAMP/htdocs/socap"
+	SEARCH  2:"\/home\/detenaes\/public_html\/socap.es" =========> "\/Applications\/MAMP\/htdocs\/socap"
+	SEARCH  3:"%2Fhome%2Fdetenaes%2Fpublic_html%2Fsocap.es" =====> "%2FApplications%2FMAMP%2Fhtdocs%2Fsocap"
+	SEARCH  4:"\home\detenaes\public_html\socap.es" =============> "/Applications/MAMP/htdocs/socap"
+	SEARCH  5:"\\home\\detenaes\\public_html\\socap.es" =========> "\/Applications\/MAMP\/htdocs\/socap"
+	SEARCH  6:"%5Chome%5Cdetenaes%5Cpublic_html%5Csocap.es" =====> "%2FApplications%2FMAMP%2Fhtdocs%2Fsocap"
+	SEARCH  7:"//www.socap.es" ==================================> "//socap.local"
+	SEARCH  8:"\/\/www.socap.es" ================================> "\/\/socap.local"
+	SEARCH  9:"%2F%2Fwww.socap.es" ==============================> "%2F%2Fsocap.local"
+	SEARCH 10:"//socap.es" ======================================> "//socap.local"
+	SEARCH 11:"\/\/socap.es" ====================================> "\/\/socap.local"
+	SEARCH 12:"%2F%2Fsocap.es" ==================================> "%2F%2Fsocap.local"
+	SEARCH 13:"https://socap.local" =============================> "http://socap.local"
+	SEARCH 14:"https:\/\/socap.local" ===========================> "http:\/\/socap.local"
+	SEARCH 15:"https%3A%2F%2Fsocap.local" =======================> "http%3A%2F%2Fsocap.local"
+	SEARCH 16:"//detenaes-cp511.wordpresstemporal.com/socap.es" => "//socap.local"
+	SEARCH 17:"\/\/detenaes-cp511.wordpresstemporal.com\/socap.es" => "\/\/socap.local"
+	SEARCH 18:"%2F%2Fdetenaes-cp511.wordpresstemporal.com%2Fsocap.es" => "%2F%2Fsocap.local"
+	SEARCH 19:"https://socap.local" =============================> "http://socap.local"
+	SEARCH 20:"https:\/\/socap.local" ===========================> "http:\/\/socap.local"
+	SEARCH 21:"https%3A%2F%2Fsocap.local" =======================> "http%3A%2F%2Fsocap.local"
+
+EVALUATE TABLE: "wp_users"________________________________________[ROWS:     1][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/detenaes/public_html/socap.es" =============> "/Applications/MAMP/htdocs/socap"
+	SEARCH  2:"\/home\/detenaes\/public_html\/socap.es" =========> "\/Applications\/MAMP\/htdocs\/socap"
+	SEARCH  3:"%2Fhome%2Fdetenaes%2Fpublic_html%2Fsocap.es" =====> "%2FApplications%2FMAMP%2Fhtdocs%2Fsocap"
+	SEARCH  4:"\home\detenaes\public_html\socap.es" =============> "/Applications/MAMP/htdocs/socap"
+	SEARCH  5:"\\home\\detenaes\\public_html\\socap.es" =========> "\/Applications\/MAMP\/htdocs\/socap"
+	SEARCH  6:"%5Chome%5Cdetenaes%5Cpublic_html%5Csocap.es" =====> "%2FApplications%2FMAMP%2Fhtdocs%2Fsocap"
+	SEARCH  7:"//www.socap.es" ==================================> "//socap.local"
+	SEARCH  8:"\/\/www.socap.es" ================================> "\/\/socap.local"
+	SEARCH  9:"%2F%2Fwww.socap.es" ==============================> "%2F%2Fsocap.local"
+	SEARCH 10:"//socap.es" ======================================> "//socap.local"
+	SEARCH 11:"\/\/socap.es" ====================================> "\/\/socap.local"
+	SEARCH 12:"%2F%2Fsocap.es" ==================================> "%2F%2Fsocap.local"
+	SEARCH 13:"https://socap.local" =============================> "http://socap.local"
+	SEARCH 14:"https:\/\/socap.local" ===========================> "http:\/\/socap.local"
+	SEARCH 15:"https%3A%2F%2Fsocap.local" =======================> "http%3A%2F%2Fsocap.local"
+	SEARCH 16:"//detenaes-cp511.wordpresstemporal.com/socap.es" => "//socap.local"
+	SEARCH 17:"\/\/detenaes-cp511.wordpresstemporal.com\/socap.es" => "\/\/socap.local"
+	SEARCH 18:"%2F%2Fdetenaes-cp511.wordpresstemporal.com%2Fsocap.es" => "%2F%2Fsocap.local"
+	SEARCH 19:"https://socap.local" =============================> "http://socap.local"
+	SEARCH 20:"https:\/\/socap.local" ===========================> "http:\/\/socap.local"
+	SEARCH 21:"https%3A%2F%2Fsocap.local" =======================> "http%3A%2F%2Fsocap.local"
+
+EVALUATE TABLE: "wp_yoast_seo_links"______________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_yoast_seo_meta"_______________________________[ROWS:    12][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/detenaes/public_html/socap.es" =============> "/Applications/MAMP/htdocs/socap"
+	SEARCH  2:"\/home\/detenaes\/public_html\/socap.es" =========> "\/Applications\/MAMP\/htdocs\/socap"
+	SEARCH  3:"%2Fhome%2Fdetenaes%2Fpublic_html%2Fsocap.es" =====> "%2FApplications%2FMAMP%2Fhtdocs%2Fsocap"
+	SEARCH  4:"\home\detenaes\public_html\socap.es" =============> "/Applications/MAMP/htdocs/socap"
+	SEARCH  5:"\\home\\detenaes\\public_html\\socap.es" =========> "\/Applications\/MAMP\/htdocs\/socap"
+	SEARCH  6:"%5Chome%5Cdetenaes%5Cpublic_html%5Csocap.es" =====> "%2FApplications%2FMAMP%2Fhtdocs%2Fsocap"
+	SEARCH  7:"//www.socap.es" ==================================> "//socap.local"
+	SEARCH  8:"\/\/www.socap.es" ================================> "\/\/socap.local"
+	SEARCH  9:"%2F%2Fwww.socap.es" ==============================> "%2F%2Fsocap.local"
+	SEARCH 10:"//socap.es" ======================================> "//socap.local"
+	SEARCH 11:"\/\/socap.es" ====================================> "\/\/socap.local"
+	SEARCH 12:"%2F%2Fsocap.es" ==================================> "%2F%2Fsocap.local"
+	SEARCH 13:"https://socap.local" =============================> "http://socap.local"
+	SEARCH 14:"https:\/\/socap.local" ===========================> "http:\/\/socap.local"
+	SEARCH 15:"https%3A%2F%2Fsocap.local" =======================> "http%3A%2F%2Fsocap.local"
+	SEARCH 16:"//detenaes-cp511.wordpresstemporal.com/socap.es" => "//socap.local"
+	SEARCH 17:"\/\/detenaes-cp511.wordpresstemporal.com\/socap.es" => "\/\/socap.local"
+	SEARCH 18:"%2F%2Fdetenaes-cp511.wordpresstemporal.com%2Fsocap.es" => "%2F%2Fsocap.local"
+	SEARCH 19:"https://socap.local" =============================> "http://socap.local"
+	SEARCH 20:"https:\/\/socap.local" ===========================> "http:\/\/socap.local"
+	SEARCH 21:"https%3A%2F%2Fsocap.local" =======================> "http%3A%2F%2Fsocap.local"
+--------------------------------------
+SCANNED:	Tables:42 	|	 Rows:8689 	|	 Cells:47296 
+UPDATED:	Tables:6 	|	 Rows:633 	|	 Cells:635 
+ERRORS:		0 
+RUNTIME:	5.019200 sec
+
+====================================
+REMOVE LICENSE KEY
+====================================
+
+====================================
+CREATE NEW ADMIN USER
+====================================
+
+====================================
+CONFIGURATION FILE UPDATES
+====================================
+	UPDATE WP_HOME "http://socap.local"
+	UPDATE WP_SITEURL "http://socap.local"
+	UPDATE DB_NAME ""socap""
+	UPDATE DB_USER ""root""
+	UPDATE DB_PASSWORD "** OBSCURED **"
+	UPDATE DB_HOST ""localhost""
+	UPDATE WP_CACHE true
+	REMOVE WPCACHEHOME
+	
+*** UPDATED WP CONFIG FILE ***
+
+====================================
+HTACCESS UPDATE MODE: "NEW"
+====================================
+- PASS: Successfully created a new .htaccess file.
+- PASS: Existing Apache '.htaccess__286d9f5-11221102' was removed
+
+====================================
+GENERAL UPDATES & CLEANUP
+====================================
+
+====================================
+DEACTIVATE PLUGINS CHECK
+====================================
+Deactivated plugins list here: Array
+(
+    [0] => really-simple-ssl/rlrsssl-really-simple-ssl.php
+    [1] => simple-google-recaptcha/simple-google-recaptcha.php
+    [2] => js_composer/js_composer.php
+)
+
+deactivate js_composer/js_composer.php
+Plugin(s) listed here are deactivated: js_composer/js_composer.php
+Plugin(s) reactivated after installation: js_composer/js_composer.php
+
+====================================
+NOTICES TEST
+====================================
+WP-CONFIG NOTICE: The wp-config.php has following values set [WP_SITEURL, WP_HOME].  
+Please validate these values are correct by opening the file and checking the values.
+See the codex link for more details: https://codex.wordpress.org/Editing_wp-config.php
+MEDIA SETTINGS NOTICE: The table 'wp_options' has at least one the following values ['upload_url_path','upload_path'] 
+set please validate settings. These settings can be changed in the wp-admin by going to /wp-admin/options.php'
+
+====================================
+CLEANUP TMP FILES
+====================================
+
+====================================
+FINAL REPORT NOTICES
+====================================
+
+STEP-3 COMPLETE @ 10:25:08 - RUNTIME: 5.1306 sec. 
+
+
+====================================
+FINAL REPORT NOTICES LIST
+====================================
+-----------------------
+[INFO] No errors in database
+	SECTIONS: database
+
+-----------------------
+[INFO] Info
+	SECTIONS: general
+	LONG MSG:             The following is a list of notices that may need to be fixed in order to finalize your setup. These values should only be investigated if you're running into
+            issues with your site. For more details see the <a href="https://codex.wordpress.org/Editing_wp-config.php" target="_blank">WordPress Codex</a>.
+
+-----------------------
+[INFO] No search and replace data errors
+	SECTIONS: search_replace
+
+-----------------------
+[INFO] No files extraction errors
+	SECTIONS: files
+
+-----------------------
+[WARNING] Deactivated Plugin:  WPBakery Page Builder
+	SECTIONS: general
+	LONG MSG: This plugin is deactivated automatically, because it requires a reacivation to work properly.  <b>Please reactivate from the WordPress admin panel after logging in.</b> This will re-enable your site's frontend.
+
+-----------------------
+[WARNING] Media settings notice
+	SECTIONS: general
+	LONG MSG: MEDIA SETTINGS NOTICE: The table 'wp_options' has at least one the following values ['upload_url_path','upload_path'] 
+set please validate settings. These settings can be changed in the wp-admin by going to /wp-admin/options.php'
+
+-----------------------
+[NOTICE] wp-config notice
+	SECTIONS: general
+	LONG MSG: WP-CONFIG NOTICE: The wp-config.php has following values set [WP_SITEURL, WP_HOME].  
+Please validate these values are correct by opening the file and checking the values.
+See the codex link for more details: https://codex.wordpress.org/Editing_wp-config.php
+
+====================================
