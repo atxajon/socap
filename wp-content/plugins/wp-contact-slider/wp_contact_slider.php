@@ -1,11 +1,11 @@
 <?php
 /*
     Plugin Name: WP Contact Slider
-	Plugin URI:	http://www.wpexperts.io/
+	Plugin URI:	https://wpcontactslider.com/
     Description: Simple Contact Slider to display Contact Form 7, Gravity Forms, some other shortcodes and dispaly random Text or HTML.
     Author: wpexpertsio
 	Author URI: http://www.wpexperts.io/
-    Version: 2.1.4
+    Version: 2.4.2
 */
 
 if(is_admin()){
@@ -44,6 +44,9 @@ require_once( 'inc/wpcs_enque_styles.php' );
 // Get Scripts
 require_once( 'inc/wpcs_enque_scripts.php' );
 
+// Add-ons bundle sub menu
+require_once( 'inc/wpcs_bundle_menu.php');
+
 register_deactivation_hook( __FILE__, 'wpcs_deactivate' );
 /**
  * @usage to avoid error after migration
@@ -51,6 +54,23 @@ register_deactivation_hook( __FILE__, 'wpcs_deactivate' );
 function wpcs_deactivate(){
 
     delete_option('fs_accounts');
+
+}
+
+/* Register activation hook. */
+register_activation_hook( __FILE__, 'wpcs_admin_notice_activation_hook' );
+ 
+/**
+ * Runs only when the plugin is activated.
+ * @since 2.2
+ */
+function wpcs_admin_notice_activation_hook() {
+ 
+    if (  get_option('wpcs_display_notice_2_2') == 'no' ) // Here we can leave it as it is even if future - as this delay is required for only new users
+        return '';
+
+    /* Create transient data */
+    set_transient( 'wpcs-admin-notice-2-2-hold', true,  24 * HOUR_IN_SECONDS );
 
 }
 
