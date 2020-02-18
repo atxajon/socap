@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (C) 2014-2018 ServMask Inc.
+ * Copyright (C) 2014-2020 ServMask Inc.
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -23,22 +23,9 @@
  * ╚══════╝╚══════╝╚═╝  ╚═╝  ╚═══╝  ╚═╝     ╚═╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝
  */
 
-class Ai1wm_Extension_Filter extends FilterIterator {
-
-	protected $include = array();
-
-	public function __construct( Iterator $iterator, $include = array() ) {
-		parent::__construct( $iterator );
-
-		// Set include filter
-		$this->include = $include;
-	}
-
-	public function accept() {
-		if ( in_array( pathinfo( $this->getInnerIterator()->getFilename(), PATHINFO_EXTENSION ), $this->include ) ) {
-			return true;
-		}
-
-		return false;
-	}
+if ( ! defined( 'ABSPATH' ) ) {
+	die( 'Kangaroos cannot jump here' );
 }
+?>
+
+<a href="https://servmask.com/products/backblaze-b2-extension" target="_blank">Backblaze B2</a>

@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (C) 2014-2018 ServMask Inc.
+ * Copyright (C) 2014-2020 ServMask Inc.
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -23,19 +23,32 @@
  * ╚══════╝╚══════╝╚═╝  ╚═╝  ╚═══╝  ╚═╝     ╚═╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝
  */
 
-class Ai1wm_Import_Resolve {
+if ( ! defined( 'ABSPATH' ) ) {
+	die( 'Kangaroos cannot jump here' );
+}
 
-	public static function execute( $params ) {
+class Ai1wm_Recursive_Extension_Filter extends RecursiveFilterIterator {
 
-		// Set progress
-		Ai1wm_Status::info( __( 'Resolving URL address...', AI1WM_PLUGIN_NAME ) );
+	protected $include = array();
 
-		// HTTP resolve
-		Ai1wm_Http::resolve( admin_url( 'admin-ajax.php?action=ai1wm_resolve' ) );
+	public function __construct( RecursiveIterator $iterator, $include = array() ) {
+		parent::__construct( $iterator );
 
-		// Set progress
-		Ai1wm_Status::info( __( 'Done resolving URL address.', AI1WM_PLUGIN_NAME ) );
+		// Set include filter
+		$this->include = $include;
+	}
 
-		return $params;
+	public function accept() {
+		if ( $this->getInnerIterator()->isFile() ) {
+			if ( ! in_array( pathinfo( $this->getInnerIterator()->getFilename(), PATHINFO_EXTENSION ), $this->include ) ) {
+				return false;
+			}
+		}
+
+		return true;
+	}
+
+	public function getChildren() {
+		return new self( $this->getInnerIterator()->getChildren(), $this->include );
 	}
 }
