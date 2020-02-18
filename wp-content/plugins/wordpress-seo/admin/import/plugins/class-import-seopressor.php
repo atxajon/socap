@@ -6,11 +6,12 @@
  */
 
 /**
- * Class WPSEO_Import_SEOPressor
+ * Class WPSEO_Import_SEOPressor.
  *
  * Class with functionality to import & clean SEOPressor post metadata.
  */
 class WPSEO_Import_SEOPressor extends WPSEO_Plugin_Importer {
+
 	/**
 	 * The plugin name.
 	 *
@@ -19,11 +20,22 @@ class WPSEO_Import_SEOPressor extends WPSEO_Plugin_Importer {
 	protected $plugin_name = 'SEOpressor';
 
 	/**
-	 * Meta key, used in SQL LIKE clause for detect query.
+	 * Meta key, used in SQL LIKE clause for delete query.
 	 *
 	 * @var string
 	 */
 	protected $meta_key = '_seop_settings';
+
+	/**
+	 * Array of meta keys to detect and import.
+	 *
+	 * @var array
+	 */
+	protected $clone_keys = [
+		[
+			'old_key' => '_seop_settings',
+		],
+	];
 
 	/**
 	 * Imports the post meta values to Yoast SEO.
@@ -64,7 +76,7 @@ class WPSEO_Import_SEOPressor extends WPSEO_Plugin_Importer {
 		$settings = get_post_meta( $post_id, '_seop_settings', true );
 
 		foreach (
-			array(
+			[
 				'fb_description'   => 'opengraph-description',
 				'fb_title'         => 'opengraph-title',
 				'fb_type'          => 'og_type',
@@ -75,28 +87,12 @@ class WPSEO_Import_SEOPressor extends WPSEO_Plugin_Importer {
 				'tw_description'   => 'twitter-description',
 				'tw_title'         => 'twitter-title',
 				'tw_image'         => 'twitter-image',
-			) as $seopressor_key => $yoast_key ) {
+			] as $seopressor_key => $yoast_key ) {
 			$this->import_meta_helper( $seopressor_key, $yoast_key, $settings, $post_id );
 		}
 
 		if ( isset( $settings['meta_rules'] ) ) {
 			$this->import_post_robots( $settings['meta_rules'], $post_id );
-		}
-	}
-
-	/**
-	 * Represents the Helper function to store the meta value should it be set in SEOPressor's settings.
-	 *
-	 * @param string $seo_pressor_key     The key in the SEOPressor array.
-	 * @param string $yoast_key           The identifier we use in our meta settings.
-	 * @param array  $seopressor_settings The array of settings for this post in SEOpressor.
-	 * @param int    $post_id             The post ID.
-	 *
-	 * @return void
-	 */
-	private function import_meta_helper( $seo_pressor_key, $yoast_key, $seopressor_settings, $post_id ) {
-		if ( ! empty( $seopressor_settings[ $seo_pressor_key ] ) ) {
-			$this->maybe_save_post_meta( $yoast_key, $seopressor_settings[ $seo_pressor_key ], $post_id );
 		}
 	}
 
@@ -116,7 +112,7 @@ class WPSEO_Import_SEOPressor extends WPSEO_Plugin_Importer {
 		$focuskw2 = trim( get_post_meta( $post_id, '_seop_kw_2', true ) );
 		$focuskw3 = trim( get_post_meta( $post_id, '_seop_kw_3', true ) );
 
-		$focus_keywords = array();
+		$focus_keywords = [];
 		if ( ! empty( $focuskw2 ) ) {
 			$focus_keywords[] = $focuskw2;
 		}
@@ -124,8 +120,8 @@ class WPSEO_Import_SEOPressor extends WPSEO_Plugin_Importer {
 			$focus_keywords[] = $focuskw3;
 		}
 
-		if ( $focus_keywords !== array() ) {
-			$this->maybe_save_post_meta( 'focuskeywords', wp_json_encode( $focus_keywords ), $post_id );
+		if ( $focus_keywords !== [] ) {
+			$this->maybe_save_post_meta( 'focuskeywords', WPSEO_Utils::format_json_encode( $focus_keywords ), $post_id );
 		}
 	}
 
@@ -155,11 +151,11 @@ class WPSEO_Import_SEOPressor extends WPSEO_Plugin_Importer {
 	 * @return array The robots values in Yoast format.
 	 */
 	private function get_robot_value( $seopressor_robots ) {
-		$return = array(
+		$return = [
 			'index'    => 2,
 			'follow'   => 0,
 			'advanced' => '',
-		);
+		];
 
 		if ( in_array( 'noindex', $seopressor_robots, true ) ) {
 			$return['index'] = 1;
@@ -167,7 +163,7 @@ class WPSEO_Import_SEOPressor extends WPSEO_Plugin_Importer {
 		if ( in_array( 'nofollow', $seopressor_robots, true ) ) {
 			$return['follow'] = 1;
 		}
-		foreach ( array( 'noarchive', 'nosnippet', 'noimageindex' ) as $needle ) {
+		foreach ( [ 'noarchive', 'nosnippet', 'noimageindex' ] as $needle ) {
 			if ( in_array( $needle, $seopressor_robots, true ) ) {
 				$return['advanced'] .= $needle . ',';
 			}
